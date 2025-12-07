@@ -1,67 +1,67 @@
 
-### x-ui精简修改版一键脚本，面板中的相关设置尽可能与原作者[vaxilu](https://github.com/vaxilu/x-ui)保持一致
+### x-This is a simplified and modified one-click script for the UI, with panel settings kept as consistent as possible with the original author [vaxilu](https://github.com/vaxilu/x-ui)
 
-### 支持纯IPV4、纯IPV6、AMD64、ARM64的VPS直接安装
+### Supports direct installation on VPSs with pure IPv4, pure IPv6, AMD64, and ARM64 architectures.
 
-### 支持alpine系统，推荐使用最新的Ubuntu系统
+### Supports Alpine systems; the latest Ubuntu system is recommended.
 
-### 本项目订阅节点为本地化生成，不使用节点转换等第三方外链引用，无需担心节点订阅被外链作者查看
-
------------------------------------------------
-### 关于XUI安全性说明：
-
-默认使用IP(http)登录方式（非安全），强烈推荐申请域名证书并开启域名(https)登录方式，以确保面版数据的安全
-
-关于安全问题的视频解读：[《侃侃墙》直播回顾：Xray作者炮轰XUI面版http明文安全性！GFW目前就那三板斧而已](https://youtu.be/eukGGt-MsS8)
+### The subscription nodes in this project are generated locally and do not use third-party external links such as node conversions. Therefore, there is no need to worry about external link authors viewing the node subscriptions.
 
 -----------------------------------------------
+### close XUI Security Description：
 
-### 相关说明及注意点请查看[博客说明](https://ygkkk.blogspot.com/2023/05/reality-xui-chatgpt.html)
+The default login method is IP address (HTTP) (which is insecure). We strongly recommend applying for a domain certificate and enabling domain name (HTTPS) login to ensure the security of your page data.
 
-### 视频教程：
+Video analysis on security issues: [Live recap of "Talking About the Wall": Xray author criticizes the plaintext security of the XUI panel! The GFW currently only has three tricks up its sleeve](https://youtu.be/eukGGt-MsS8)
 
-[x-ui搭建xray协议大更新（一）：reality协议三模式，数据重置、备份、恢复详细操作](https://youtu.be/xlvKnjQoF7c)
+-----------------------------------------------
 
-[x-ui搭建xray协议大更新（二）：集成Argo固定隧道、临时隧道](https://youtu.be/NCPCHAi8pzs)
+### Please see the [Blog Notice] for related instructions and precautions.(https://ygkkk.blogspot.com/2023/05/reality-xui-chatgpt.html)
 
-[x-ui搭建xray协议大更新（三）：支持多协议聚合订阅，自动生成Clash-meta、Sing-box配置文件](https://youtu.be/UlQm6c0UQ4U)
+### Video tutorial：
 
-[x-ui搭建xray协议大更新（四）：支持Alpine系统；ChatGPT客户端可以随便登录了，多IP分流设置详细说明](https://youtu.be/2G2f64Mm1UU)
+[x-UI Setup for Major Xray Protocol Update (Part 1): Reality Protocol Three Modes, Detailed Operations for Data Reset, Backup, and Restore][UI Setup for Major Xray Protocol Update (Part 1): Reality Protocol Three Modes, Detailed Operations for Data Reset, Backup, and Restore](https://youtu.be/xlvKnjQoF7c)
 
-[x-ui搭建xray协议大更新（五）：集成oblivion warp免费vpn功能，支持本地WARP+赛风VPN切换分流(30个国家IP)](https://youtu.be/Zo65206HBRM)
+[Major X-UI Setup for Xray Protocol Update (Part 2): Integrating Argo Fixed and Temporary Tunnels](https://youtu.be/NCPCHAi8pzs)
 
-[x-ui搭建xray协议大更新（六）：Xhttp轻松搞定UDP/TCP/CDN，Xhttp最简单的7个方案，总有一款适合你](https://youtu.be/kY_4AyQh1l0)
+[Major Update to x-ui xray Protocol Setup (Part 3): Support for Multi-Protocol Aggregation Subscription, Automatic Generation of Clash-meta and Sing-box Configuration Files](https://youtu.be/UlQm6c0UQ4U)
+
+[[Major X-UI Setup for Xray Protocol Update (Part 4): Alpine System Support; ChatGPT Client Can Now Log In Freely, Detailed Explanation of Multi-IP Splitting Settings](https://youtu.be/2G2f64Mm1UU)
+
+[X-UI Xray Protocol Major Update (Part 5): Integration of Oblivion Warp Free VPN Functionality, Supporting Local Warp + Psiphon VPN Switching and Traffic Distribution (IPs from 30 Countries)](https://youtu.be/Zo65206HBRM)
+
+[X-UI Setup for Major Xray Protocol Update (Part 6): Xhttp Easily Handles UDP/TCP/CDN, 7 Simplest Xhttp Solutions, There's Always One That Suits You](https://youtu.be/kY_4AyQh1l0)
 
 -----------------------------------------------------
-### 交流平台：[甬哥博客地址](https://ygkkk.blogspot.com)、[甬哥YouTube频道](https://www.youtube.com/@ygkkk)、[甬哥TG电报群组](https://t.me/+jZHc6-A-1QQ5ZGVl)、[甬哥TG电报频道](https://t.me/+DkC9ZZUgEFQzMTZl)
+### Communication platforms: [Yong Ge's Blog Address](https://ygkkk.blogspot.com), [Yong Ge's YouTube Channel](https://www.youtube.com/@ygkkk), [Yong Ge's Telegram Group](https://t.me/+jZHc6-A-1QQ5ZGVl), [Yong Ge's Telegram Channel](https://t.me/+DkC9ZZUgEFQzMTZl)
 
 -------------------------------
 
-### 一键脚本：
+### One-click script：
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/x-ui-yg/main/install.sh)
 ```
-或
+or
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/x-ui-yg/main/install.sh)
 ```
 -----------------------------------------------------
-### x-ui-yg脚本菜单界面附加功能全开预览图（注：相关参数随意填写，仅供围观）
+### Preview of all additional functions in the x-ui-yg script menu interface (Note: Related parameters can be filled in arbitrarily, for viewing purposes only).
 
 ![3b01adef46255df98053a3e49372373](https://github.com/user-attachments/assets/cea4568f-bb19-46b9-a35b-bacc67ac573a)
 
 -----------------------------------------------------
-### 感谢支持！微信打赏甬哥侃侃侃ygkkk
+### Thank you for your support! (WeChat tip for Yongge Kankankan ygkkk)
 ![41440820a366deeb8109db5610313a1](https://github.com/user-attachments/assets/69597ca3-e7a5-44e7-8e5e-6305c7a63933)
 
 -----------------------------------------------------
 
-### 感谢你右上角的star🌟
+### Thank you for the star in the upper right corner 🌟
 [![Stargazers over time](https://starchart.cc/yonggekkk/x-ui-yg.svg)](https://starchart.cc/yonggekkk/x-ui-yg)
 
-### 参考项目[vaxilu](https://github.com/vaxilu/x-ui)，[MHSanaei](https://github.com/MHSanaei/3x-ui)，[qist](https://github.com/qist/xray-ui)，[warpplus](https://github.com/bepass-org/warp-plus)
+### Reference Projects[vaxilu](https://github.com/vaxilu/x-ui)，[MHSanaei](https://github.com/MHSanaei/3x-ui)，[qist](https://github.com/qist/xray-ui)，[warpplus](https://github.com/bepass-org/warp-plus)
 
 ---------------------------------------
-#### 声明：
+#### statement：
 
-#### 所有代码来源于Github参考项目与ChatGPT的整合，二进制文件未开源，介意者请勿安装使用
+#### All code is derived from the integration of the GitHub reference project and ChatGPT. The binary files are not open source; please do not install or use them if you mind.

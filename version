@@ -1,7 +1,7 @@
-v25.1.12更新内容：
-更新日志：
-1：支持Xhttp传输协议功能
-3：修复相关BUG，升级相关依赖，更新相关文字描述
-在线升级用户可直接更新！！！
-重置配置文件？已备份在https://github.com/yonggekkk/x-ui-yg/blob/main/config.json
-博客教程详见：https://ygkkk.blogspot.com/2023/05/reality-xui-chatgpt.html
+v25.1.12 Update Notes:
+Update Log:
+1. Supports XHTTP transport protocol.
+3: Fix related bugs, upgrade related dependencies, and update related text descriptions.
+Users can update directly via online upgrade ! ！！
+Reset configuration file? It's already backed up at https://github.com/yonggekkk/x-ui-yg/blob/main/config.json
+For detailed blog tutorials, please see: https://ygkkk.blogspot.com/2023/05/reality-xui-chatgpt.html

@@ -1,7 +1,7 @@
 name: Keep Servers Alive
 on:
   schedule:
-   - cron: '0 12 */10 * *' # 每10天的12：00执行一次（私库每月500分钟运行时长，每天16分钟）
+   - cron: '0 12 */10 * *' # Executes once every 10 days at 12:00 (private database has 500 minutes of runtime per month, 16 minutes per day).
   workflow_dispatch: 
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     env:
       ACCOUNTS: >
         [
-        { "SSH_USER":"用户名", "SSH_PASS":"密码", "HOST":"登录IP或者域名", "PORT":"端口"}
+        { "SSH_USER":"Username", "SSH_PASS":"Password", "HOST":"Login IP or domain name", "PORT":"Port"}
         ]
     steps:
       - name: Checkout Repository
@@ -25,10 +25,10 @@ jobs:
         run: |
              echo "*****************************************************"
              echo "*****************************************************"
-             echo "甬哥Github项目  ：github.com/yonggekkk"
-             echo "甬哥Blogger博客 ：ygkkk.blogspot.com"
-             echo "甬哥YouTube频道 ：www.youtube.com/@ygkkk"
-             echo "vps服务器远程登录一次SSH脚本【Github】"
+             echo "Yongge's GitHub project: github.com/yonggekkk
+             echo "Yongge's Blogger Blog: ygkkk.blogspot.com"
+             echo Yongge's YouTube channel: www.youtube.com/@ygkkk
+             echo "SSH script for remote login to a VPS server [Github]"
              echo "*****************************************************"
              echo "*****************************************************"
               count=0  
@@ -39,9 +39,9 @@ jobs:
               HOST=$(echo $account | jq -r '.HOST')
               PORT=$(echo $account | jq -r '.PORT')
              if sshpass -p "$SSH_PASS" ssh -p "$PORT" -o StrictHostKeyChecking=no "$SSH_USER@$HOST" -q exit; then
-             echo "🎉恭喜！✅第【$count】台服务器连接成功！🚀服务器地址：$HOST ，账户名：$SSH_USER"
+             echo "🎉Congratulations! ✅The [$count]th server has successfully connected! 🚀Server address: $HOST, Username: $SSH_USER"
              else
-             echo "💥杯具！❌第【$count】台服务器连接失败！🚀服务器地址：$HOST ，账户名：$SSH_USER"
+             echo "💥Disaster! ❌Connection failed for the [$count]th server! 🚀Server address: $HOST, Username: $SSH_USER"
              fi
              sleep 5
              done
